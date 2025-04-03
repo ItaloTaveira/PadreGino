@@ -15,7 +15,7 @@ const testPizza = {
   image: "/public/pizzas/calabrese.webp",
   sizes: { S: 12.25, M: 16.25, L: 20.25 },
 };
-
+ 
 test("to be null on initial load", async () => {
   fetch.mockResponseOnce(JSON.stringify(testPizza));
   const { result } = renderHook(() => usePizzaOfTheDay(""));

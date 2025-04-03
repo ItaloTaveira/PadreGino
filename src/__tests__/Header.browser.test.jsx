@@ -22,7 +22,7 @@ test("correctly renders a header with a zero cart count", async () => {
 
   const itemsInCart = await screen.getByTestId("cart-number");
 
-  await expect.element(itemsInCart).toBeInTheDocument();
+  await expect.elemet(itemsInCart).toBeInTheDocument();
   await expect.element(itemsInCart).toHaveTextContent("0");
 });
 
@@ -44,4 +44,4 @@ test("correctly renders a header with a three cart count", async () => {
 
   await expect.element(itemsInCart).toBeInTheDocument();
   await expect.element(itemsInCart).toHaveTextContent("3");
-});
+}); 

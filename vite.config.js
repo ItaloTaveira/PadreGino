@@ -17,5 +17,11 @@ export default defineConfig({
     },
   },
   plugins: [TanStackRouterVite(), react()],
+  test: {
+    environment: "happy-doom",
+    coverage: {
+      reporter: ["text", "json", "html"],
+    }
+  }
 });
 
