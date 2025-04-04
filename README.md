@@ -1,137 +1,147 @@
 # PadreGino's Delivery
 
-PadreGino's Delivery é um projeto de exemplo para um sistema de pedidos de pizza online, desenvolvido como parte do curso "The Complete Intro to React v9" por Brian Holt para Frontend Masters.
+PadreGino's Delivery is a sample project for an online pizza ordering system, developed as part of the course **"The Complete Intro to React v9"** by Brian Holt for Frontend Masters.
 
-## Estrutura do Projeto
+### Demonstração
 
-O projeto está estruturado da seguinte forma:
+![Demonstração do Projeto](/screenshots/Padre%20GIno's.gif)
 
-## Tecnologias Utilizadas
+---
 
-- **React**: Biblioteca para construção de interfaces de usuário.
-- **TanStack Router**: Gerenciamento de rotas.
-- **TanStack Query**: Gerenciamento de estado assíncrono.
-- **Vite**: Ferramenta de build e desenvolvimento.
-- **Vitest**: Framework de testes.
-- **Playwright**: Testes de navegador.
-- **Happy DOM**: Ambiente DOM para testes.
-- **ESLint**: Ferramenta de linting.
-- **Prettier**: Formatação de código.
+## Pré-requisitos
 
-## Funcionalidades
+Antes de começar, certifique-se de ter as seguintes versões instaladas:
 
-- **Página Inicial**: Apresenta a marca e links para as páginas de pedido, pedidos passados e contato.
-- **Pedido de Pizza**: Permite selecionar o tipo e tamanho da pizza, adicioná-la ao carrinho e realizar o checkout.
-- **Pizza do Dia**: Exibe a pizza do dia com informações detalhadas.
-- **Pedidos Passados**: Lista pedidos anteriores com detalhes e permite visualizar informações específicas.
-- **Contato**: Formulário para envio de mensagens de contato.
-- **Carrinho de Compras**: Exibe os itens adicionados ao carrinho e o total do pedido.
+- **Node.js**: Versão mínima 16.x
+- **npm**: Versão mínima 8.x
 
-## Scripts Disponíveis
+---
 
-Os scripts disponíveis no arquivo `package.json` incluem:
+## Configuração do `.env`
 
-- `npm run dev`: Inicia o servidor de desenvolvimento.
-- `npm run build`: Gera a build de produção.
-- `npm run preview`: Visualiza a build de produção.
-- `npm run test`: Executa os testes.
-- `npm run test:ui`: Abre a interface de usuário do Vitest.
-- `npm run coverage`: Gera o relatório de cobertura de testes.
-- `npm run lint`: Executa o ESLint.
-- `npm run format`: Formata o código com Prettier.
+Para configurar o ambiente de desenvolvimento, crie um arquivo `.env.development` na raiz do diretório `pizza-client` com o seguinte conteúdo:
 
-## Configuração do Ambiente
+```env
+VITE_API_URL=http://localhost:3000
+```
 
-1. Certifique-se de ter o Node.js instalado.
-2. Instale as dependências com:
+Substitua `http://localhost:3000` pela URL da API do ambiente de desenvolvimento, se necessário.
 
-   ```sh
-   npm install
-   ```
+---
 
-## Dependências Instaladas
+## Project Structure
 
-O projeto utiliza as seguintes dependências principais:
+The project is organized as follows:
 
-- **Vite**: Ferramenta de build e desenvolvimento. Instalado com:
+- **Home Page**: Showcases the brand and provides links to the order, past orders, and contact pages.
+- **Pizza Ordering**: Allows users to select the type and size of pizza, add it to the cart, and proceed to checkout.
+- **Pizza of the Day**: Displays the daily special with detailed information.
+- **Past Orders**: Lists previous orders with details and allows viewing specific information.
+- **Contact**: A form for sending contact messages.
+- **Shopping Cart**: Displays added items and the total order amount.
 
-  ```sh
-  npm install vite
-  ```
+---
 
-- **React** e **React DOM**: Biblioteca para construção de interfaces de usuário. Instalado com:
+## Technologies Used
 
-  ```sh
-  npm install react react-dom
-  ```
+The project leverages the following technologies:
 
-- **ESLint**: Ferramenta de linting. Instalado com:
+- **React**: Library for building user interfaces. [Documentation](https://react.dev/)
+- **TanStack Router**: Routing management. [Documentation](https://tanstack.com/router)
+- **TanStack Query**: Asynchronous state management. [Documentation](https://tanstack.com/query)
+- **Vite**: Build and development tool. [Documentation](https://vitejs.dev/)
+- **Vitest**: Testing framework. [Documentation](https://vitest.dev/)
+- **Playwright**: Browser testing. [Documentation](https://playwright.dev/)
+- **Happy DOM**: DOM environment for testing. [Documentation](https://github.com/capricorn86/happy-dom)
+- **ESLint**: Linting tool. [Documentation](https://eslint.org/)
+- **Prettier**: Code formatting. [Documentation](https://prettier.io/)
 
-  ```sh
-  npm install eslint --save-dev
-  ```
+---
 
-- **Prettier**: Formatação de código. Instalado com:
+## Accessing and Running the Application
 
-  ```sh
-  npm install prettier --save-dev
-  ```
+The project consists of two main parts: `pizza-client` and `pizza-server`. Follow the steps below to set up and run the application:
 
-- **TanStack Router**: Gerenciamento de rotas. Instalado com:
+### Setting Up `pizza-client`
 
-  ```sh
-  npm install @tanstack/react-router @tanstack/router-plugin @tanstack/router-devtools
-  ```
+1. Navigate to the `pizza-client` directory:
 
-- **TanStack Query**: Gerenciamento de estado assíncrono. Instalado com:
-  ```sh
-  npm install @tanstack/react-query @tanstack/react-query-devtools
-  ```
+```bash
+cd pizza-client
+```
 
-### Dependências para Testes (Opcionais)
+2. Install the dependencies:
 
-Caso queira realizar testes na aplicação, as seguintes dependências foram instaladas:
+```bash
+npm install
+```
 
-- **Vitest**: Framework de testes. Instalado com:
+3. Start the development server:
 
-  ```sh
-  npm install vitest @vitest/ui @vitest/browser @vitest/coverage-istanbul @vitest/coverage-v8 --save-dev
-  ```
+```bash
+npm run dev
+```
 
-- **Playwright**: Testes de navegador. Instalado com:
+### Setting Up `pizza-server`
 
-  ```sh
-  npm install playwright --save-dev
-  ```
+1. Navigate to the `pizza-server` directory:
 
-- **Happy DOM**: Ambiente DOM para testes. Instalado com:
+```bash
+cd pizza-server
+```
 
-  ```sh
-  npm install happy-dom --save-dev
-  ```
+2. Install the dependencies:
 
-- **Testing Library**: Biblioteca para testes de componentes React. Instalado com:
+```bash
+npm install
+```
 
-  ```sh
-  npm install @testing-library/react --save-dev
-  ```
+3. Start the server:
 
-- **Vitest Fetch Mock**: Mock para testes de fetch. Instalado com:
-  ```sh
-  npm install vitest-fetch-mock --save-dev
-  ```
+```bash
+npm start
+```
 
-### Plugins e Ferramentas Adicionais
+---
 
-- **ESLint Plugins**: Plugins adicionais para ESLint. Instalado com:
+## Available Scripts
 
-  ```sh
-  npm install eslint-config-prettier eslint-plugin-react globals --save-dev
-  ```
+The following scripts are available in the `package.json` file for both `pizza-client` and `pizza-server`:
 
-- **Vite Plugin React**: Plugin para integração do React com Vite. Instalado com:
-  ```sh
-  npm install @vitejs/plugin-react --save-dev
-  ```
+- `npm run dev`: Starts the development server (client only).
+- `npm start`: Starts the server (server only).
+- `npm run build`: Generates the production build (client only).
+- `npm run test`: Runs the tests.
+- `npm run lint`: Runs ESLint.
+- `npm run format`: Formats the code with Prettier.
 
-Certifique-se de que todas essas dependências estão listadas no arquivo `package.json` para facilitar a instalação em outros ambientes.
+---
+
+## Environment Setup
+
+To set up the project locally:
+
+1. Ensure you have **Node.js** installed.
+2. Follow the steps in the **Accessing and Running the Application** section to set up both `pizza-client` and `pizza-server`.
+
+---
+
+## Exemplo de Uso
+
+Veja abaixo algumas capturas de tela e exemplos de como o projeto funciona:
+
+### Home Page
+
+![Home Page](./screenshots/home-page.png)
+
+### Pizza Ordering
+
+![Pizza Ordering](./screenshots/pizza-ordering.png)
+
+### Shopping Cart
+
+![Shopping Cart](./screenshots/shopping-cart.png)
+
+---
+
+Feel free to explore and contribute to the project!
