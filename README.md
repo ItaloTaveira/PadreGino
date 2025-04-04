@@ -1,6 +1,6 @@
 # PadreGino's Delivery
 
-PadreGino's Delivery is a sample project for an online pizza ordering system, developed as part of the course **"The Complete Intro to React v9"** by Brian Holt for Frontend Masters.
+PadreGino's Delivery is a sample project for an online pizza ordering system.
 
 ### Project Demonstration
 
