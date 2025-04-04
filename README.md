@@ -4,7 +4,7 @@ PadreGino's Delivery is a sample project for an online pizza ordering system, de
 
 ### Demonstração
 
-![Project Demonstration](/screenshots/Padre%20Gino's.gif)
+![Project Demonstration](/screenshots/Padre%20GIno's.gif)
 
 ---
 
