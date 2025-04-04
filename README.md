@@ -8,24 +8,24 @@ PadreGino's Delivery is a sample project for an online pizza ordering system, de
 
 ---
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de começar, certifique-se de ter as seguintes versões instaladas:
+Before starting, make sure you have the following versions installed:
 
-- **Node.js**: Versão mínima 16.x
-- **npm**: Versão mínima 8.x
+- **Node.js**: Minimum version 16.x
+- **npm**: Minimum version 8.x
 
 ---
 
-## Configuração do `.env`
+## `.env` Configuration
 
-Para configurar o ambiente de desenvolvimento, crie um arquivo `.env.development` na raiz do diretório `pizza-client` com o seguinte conteúdo:
+To set up the development environment, create a `.env.development` file in the root of the `pizza-client` directory with the following content:
 
 ```env
 VITE_API_URL=http://localhost:3000
 ```
 
-Substitua `http://localhost:3000` pela URL da API do ambiente de desenvolvimento, se necessário.
+Replace `http://localhost:3000` with the API URL for the development environment, if necessary.
 
 ---
 
@@ -126,9 +126,9 @@ To set up the project locally:
 
 ---
 
-## Exemplo de Uso
+## Usage Example
 
-Veja abaixo algumas capturas de tela e exemplos de como o projeto funciona:
+Below are some screenshots and examples of how the project works:
 
 ### Home Page
 
