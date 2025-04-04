@@ -8,6 +8,27 @@ PadreGino's Delivery is a sample project for an online pizza ordering system, de
 
 ---
 
+## Cloning the Repository
+
+To obtain a local copy of the project, follow the steps below:
+
+1. Open the terminal and navigate to the directory where you want to clone the project.
+2. Run the following command:
+
+```bash
+git clone https://github.com/your-username/padre-gino-delivery.git
+```
+
+3. Navigate into the cloned project directory:
+
+```bash
+cd padre-gino-delivery
+```
+
+Now you can follow the instructions in the **Accessing and Running the Application** section to set up and run the project.
+
+---
+
 ## Prerequisites
 
 Before starting, make sure you have the following versions installed:
@@ -123,25 +144,5 @@ To set up the project locally:
 
 1. Ensure you have **Node.js** installed.
 2. Follow the steps in the **Accessing and Running the Application** section to set up both `pizza-client` and `pizza-server`.
-
----
-
-## Usage Example
-
-Below are some screenshots and examples of how the project works:
-
-### Home Page
-
-![Home Page](./screenshots/home-page.png)
-
-### Pizza Ordering
-
-![Pizza Ordering](./screenshots/pizza-ordering.png)
-
-### Shopping Cart
-
-![Shopping Cart](./screenshots/shopping-cart.png)
-
----
 
 Feel free to explore and contribute to the project!
